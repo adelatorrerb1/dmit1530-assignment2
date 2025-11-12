@@ -11,59 +11,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/reset.css">
+
+    <script src="/js/main.js" defer></script>
 </head>
 <body>
     
     <header>
         <div class="header-flexed">
             <div class="brand-name-logo">
-                <img src="" alt="">
+                <img src="/img/logo.png" alt="logo of a green travel suitcase">
                 <h1>travlers</h1>
             </div>
 
-            <button>
-                <title>hamburger nav menu</title>
+            <button class="hamburger toggle-btn">
+                    
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 23">
+                    <title>Click To Toggle Menu</title>
+                    <path d="m28.125 0 .0484.0006C29.1866.0263 30 .8556 30 1.875s-.8134 1.8487-1.8266 1.8744l-.0484.0006H1.875C.8394 3.75 0 2.9105 0 1.875 0 .8394.8394 0 1.875 0zm0 18.75.0484.0006c1.0132.0257 1.8266.855 1.8266 1.8744s-.8134 1.8487-1.8266 1.8744l-.0484.0006H1.875C.8394 22.5 0 21.6605 0 20.625s.8394-1.875 1.875-1.875zm0-9.375.0484.0006C29.1866 9.4013 30 10.2306 30 11.25s-.8134 1.8487-1.8266 1.8744l-.0484.0006H1.875C.8394 13.125 0 12.2855 0 11.25s.8394-1.875 1.875-1.875z" fill="#246729"/>
+                </svg>
             </button>
+            <nav class="collapsed expanded">
+                <ul>
+                    <li><a href="#">Travel Guide <img src="/img/globe.png" alt="emblem of a globe"></a></li>
+                    <li><a href="#">Services <img src="" alt=""></a></li>
+                    <li><a href="#">About <img src="" alt=""></a></li>
+                    <li><a href="#">The Tour <img src="" alt=""></a></li>
+                    <li><a href="#">How To <img src="" alt=""></a></li>
+                    <li><a href="#">Contact <img src="" alt=""></a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main>
 
-        <div>
-            <section class="banner">
-                <div>
-                    <p>travlers gets you to where you want to be.</p> 
-                </div>
-            </section>
-        </div>
+        <section class="banner">
+            <div>
+                <h2 class="banner-title">travlers gets you to where you want to be.</h2>
+                <p class="banner-text">Around the world. Around the clock.</p> 
+            </div>
+        </section>
+    
 
         <section class="about-us">
+
+            <h2>Anywhere, Anytime, we’re here to help.</h2>
+            <p class="subheaders">And we mean that.</p>
+    
             <div>
-                <h2>Anywhere, Anytime, we’re here to help.</h2>
-                <p class="subheaders">And we mean that.</p>
-    
-                <img src="" alt="">
-                <div>
-                    <h3>Save Time</h3>
-
-                    <p>Planning your next adventure shouldn’t feel like a full-time job. With our streamlined booking tools, curated travel itineraries, and insider tips, you can skip the stress and get straight to the fun. Whether you're looking for a weekend getaway or a month-long escape, we make it easy to find, plan, and book your perfect trip—all in one place. Let us handle the details so you can focus on making memories.</p>
+                <div class="image-container-1">
+                    <img src="/img/clock.png" alt="clock emblem">
                 </div>
-    
-                <img src="" alt="">
-                <div>
-                    <h3>Win over the team</h3>
+                <h3>Save Time</h3>
+                <p>Planning your next adventure shouldn’t feel like a full-time job. With our streamlined booking tools, curated travel itineraries, and insider tips, you can skip the stress and get straight to the fun. Whether you're looking for a weekend getaway or a month-long escape, we make it easy to find, plan, and book your perfect trip—all in one place. Let us handle the details so you can focus on making memories.</p>
+            </div>
 
-                    <p>Impress your colleagues and make group travel a breeze with our team-friendly planning tools. From seamless coordination to customizable itineraries, we help you create trips that everyone will love. Whether it’s a corporate retreat, a team-building getaway, or a celebratory escape, we make it easy to align schedules, preferences, and budgets—so you can focus on building connections and unforgettable experiences.</p>
+            <div>
+                <div class="image-container-1">
+                    <img src="/img/cube.png" alt="emblem of a 3d cube">
                 </div>
+                <h3>Win over the team</h3>
+                <p>Impress your colleagues and make group travel a breeze with our team-friendly planning tools. From seamless coordination to customizable itineraries, we help you create trips that everyone will love. Whether it’s a corporate retreat, a team-building getaway, or a celebratory escape, we make it easy to align schedules, preferences, and budgets—so you can focus on building connections and unforgettable experiences.</p>
+            </div>
     
-                <img src="" alt="">
-                <div>
-                    <h3>Features</h3>
-
-                    <p>Discover a smarter way to travel with features designed to make every step of your journey effortless. From real-time price alerts and flexible booking options to personalized recommendations and secure payment systems, our platform is built to support your travel needs. Enjoy intuitive tools that help you compare, plan, and book with confidence—whether you're traveling solo, with family, or as a group. Everything you need, right at your fingertips.</p>
+            <div>
+                <div class="image-container-1">
+                    <img src="/img/cloud.png" alt="cloud emblem">
                 </div>
+                <h3>Features</h3>
+                <p>Discover a smarter way to travel with features designed to make every step of your journey effortless. From real-time price alerts and flexible booking options to personalized recommendations and secure payment systems, our platform is built to support your travel needs. Enjoy intuitive tools that help you compare, plan, and book with confidence—whether you're traveling solo, with family, or as a group. Everything you need, right at your fingertips.</p>
             </div>
         </section>
 
@@ -73,42 +91,56 @@
 
             <div class="team-card-deck">
                 <div class="member">
-                    <img src="" alt="">
-                    <h3>John Joshen</h3>
-                    <p>Digital Producer</p>
+                    <div>
+                        <div class="image-container-2">
+                            <img src="/img/john-joshen.jpg" alt="photo of a man with a red shirt and white collar">
+                        </div>
+                        <h3>John Joshen</h3>
+                        <p>Digital Producer</p>
+                    </div>
 
                     <div class="socials">
-                        <a href="#" class="social-icons"><img src="" alt=""></a>
-                        <a href="#" class="social-icons"><img src="" alt=""></a>
-                        <a href="#" class="social-icons"><img src="" alt=""></a>
-                        <a href="#" class="social-icons"><img src="" alt=""></a>
+                        <a href="#" class="social-icons"><img src="/img/github.png" alt="GitHub Logo Icon"></a>
+                        <a href="#" class="social-icons"><img src="/img/whatsapp.png" alt="WhatsApp Logo Icon"></a>
+                        <a href="#" class="social-icons"><img src="/img/idrk.png" alt="Logo icon of a social media platform I don't know about"></a>
+                        <a href="#" class="social-icons"><img src="/img/instagram.png" alt="Instagram Logo Icon"></a>
                     </div>
                 </div>
 
                 <div class="member">
-                    <img src="" alt="">
-                    <h3>Jenny Taupe</h3>
-                    <p>Developer</p>
+                    <div>
+                        <div class="image-container-2">
+                            <img src="/img/jenny-taupe.jpg" alt="photo of a woman with a maroon turtleneck">
+                        </div>
+                        <h3>Jenny Taupe</h3>
+                        <p>Developer</p>
+                    </div>
 
                     <div class="socials">
-                        <a href="#" class="social-icons"><img src="" alt=""></a>
-                        <a href="#" class="social-icons"><img src="" alt=""></a>
+                        <a href="#" class="social-icons"><img src="/img/github.png" alt="GitHub Logo Icon"></a>
+                        <a href="#" class="social-icons"><img src="/img/instagram.png" alt="Instagram Logo Icon"></a>
                     </div>
                 </div>
 
                 <div class="member">
-                    <img src="" alt="">
-                    <h3>Raz Blobar</h3>
-                    <p>Designer</p>
+                    <div>
+                        <div class="image-container-2">
+                            <img src="/img/raz-blobar.jpg" alt="photo of a man with a blue suit and tie">
+                        </div>
+                        <div class="socials">
+                            <a href="#" class="social-icons"><img src="/img/idrk.png" alt="Logo icon of a social media platform I don't know about"></a>
+                            <a href="#" class="social-icons"><img src="/img/instagram.png" alt="Instagram Logo Icon"></a>
+                        </div>
+                    </div>
 
-                    <div class="socials">
-                        <a href="#" class="social-icons"><img src="" alt=""></a>
-                        <a href="#" class="social-icons"><img src="" alt=""></a>
+                    <div>
+                        <h3>Raz Blobar</h3>
+                        <p>Designer</p>
                     </div>
                 </div>
 
                 <div class="member">
-                    <img src="" alt="">
+                    <img src="/img/karen-chad.jpg" alt="photo of a woman with a blue shirt">
                     <h3>Karen Chad</h3>
                     <p>Administrator</p>
                 </div>
@@ -120,22 +152,22 @@
 
             <div class="travel-card-deck">
                 <div class="vacation-locations">
-                    <img src="" alt="">
+                    <img src="/img/greece.jpg" alt="">
                     <h3>Santorini, Greece</h3>
                 </div>
 
                 <div class="vacation-locations">
-                    <img src="" alt="">
+                    <img src="/img/maldives.jpg" alt="">
                     <h3>Veligandu Island, Maldives</h3>
                 </div>
 
                 <div class="vacation-locations">
-                    <img src="" alt="">
+                    <img src="/img/united-states.jpg" alt="">
                     <h3>Valley of Fire State Park, United States</h3>
                 </div>
 
                 <div class="vacation-locations">
-                    <img src="" alt="">
+                    <img src="/img/mexico.jpg" alt="">
                     <h3>Tulum, Mexico</h3>
                 </div>
             </div>
@@ -153,7 +185,9 @@
     </footer>
 
     <div class="up-button">
-        
+        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+            <title>To Bring You Back to The Top</title>
+        <path d="M18 .5a17.5 17.5 0 1 1 0 35 17.5 17.5 0 0 1 0-35Zm1.15 7.35a1.63 1.63 0 0 0-2.3 0l-7.87 7.87a1.63 1.63 0 0 0 1.14 2.78h4v6.25a2.75 2.75 0 0 0 2.76 2.75h2.25a2.75 2.75 0 0 0 2.75-2.75V18.5h4a1.63 1.63 0 0 0 1.14-2.77z" fill="#246729" stroke="#fff"/></svg>
     </div>
 
 </body>

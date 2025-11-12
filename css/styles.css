@@ -5,7 +5,7 @@
     --main: #246729;
 }
 
-main {
+body {
     margin: 0 auto;
 }
 
@@ -16,10 +16,13 @@ h1 {
     font-weight: 700;
     font-style: normal;
     font-size: 40px;
+    color: var(--main);
 }
 
 h2,
 h3,
+nav,
+.banner-text,
 .subheaders,
 footer {
     font-family: "Catamaran", sans-serif;
@@ -28,11 +31,12 @@ footer {
     font-style: normal;
 }
 
-.banner {
+.banner-title {
     font-family: "KoHo", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 2.25rem;
+    font-size: 36px;
+    color: white;
 }
 
 main p {
@@ -53,22 +57,172 @@ p {
 
 /* The Rest */
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 16px;
+    box-shadow: var(--dark);
+    background-color: white;
+}
+
+.header-flexed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle-btn {
+    background-color: unset;
+    border: none;
+    font-size: 4.40625rem;
+}
+
+.toggle-btn svg {
+    display: block;
+    width: 2rem;
+}
+
+nav {
+    background-color: var(--main);
+    color: white;
+    position: fixed;
+    top: 4.73rem;
+    left: 22.6rem;
+    width: 50%;
+    z-index: 10;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.collapsed {
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.3s;
+    visibility: hidden;
+}
+
+.expanded {
+    max-height: unset;
+    opacity: 1;
+    visibility: visible;
+}
+
+.brand-name-logo {
+    display: flex;
+}
+
+.banner {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: url(../img/banner.jpg) center / cover no-repeat;
+    padding: 36px;
+    height: 198px;
+}
+
+.banner-text {
+    visibility: hidden;
+}
+
+.image-container-1 {
+    margin-left: 43%;
+}
+
+.image-container-2 {
+    margin-left: 10%;
+    margin-bottom: 1rem;
+}
+
+.about-us {
+    background-color: var(--dark);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 16px 24px 16px;
+}
+
+.subheaders {
+    margin-bottom: 0.25rem;
+}
+
+.the-squad {
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 24px 16px 24px 16px;
+}
+
+.team-card-deck {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.75rem;
+}
+
+.member {
+    background-color: var(--light-grey);
+    padding: 16px;
+    width: 96%;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.must-visits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-grey);
+}
+
+.vacation-locations {
+    background-color: white;
+    padding-right: -90px;
+}
+
 footer {
     height: 4.25rem;
+    background-color: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
     visibility: hidden;
-    color: var(--dark);
-    align-items: center;
 }
 
 .up-button {
     display: flex;
     justify-content: flex-end;
+    height: 36px;
+    width: 36px;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
 }
 
 /* Medium View */
 
 @media (min-width: 834px) {
-    footer {
+    footer p {
         visibility: visible;
     }
 }
@@ -76,7 +230,7 @@ footer {
 /* Large View */
 
 @media (min-width: 1440px) {
-    footer {
+    footer p {
         visibility: visible;
     }
 }
