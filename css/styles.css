@@ -98,11 +98,20 @@ nav ul {
     padding: 0;
 }
 
+nav svg {
+    width: 10%;
+}
+
 nav a {
     display: block;
     padding: 0.5rem 1rem;
     text-decoration: none;
     transition: background-color 0.3s;
+}
+
+.nav-button-flexed {
+    display: flex;
+    gap: 1rem;
 }
 
 .collapsed {
@@ -131,12 +140,18 @@ nav a {
     height: 198px;
 }
 
+.banner-title {
+    max-width: 50vw;
+}
+
 .banner-text {
     visibility: hidden;
 }
 
+
 .image-container-1 {
     margin-left: 43%;
+    padding-bottom: 0.5rem;
 }
 
 .image-container-2 {
@@ -151,6 +166,7 @@ nav a {
     flex-direction: column;
     text-align: center;
     padding: 24px 16px 24px 16px;
+    gap: 1.5rem;
 }
 
 .subheaders {
@@ -186,15 +202,34 @@ nav a {
 }
 
 .must-visits {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: var(--dark-grey);
 }
 
+.must-visits h2 {
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.travel-card-deck {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    gap: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 1.5rem;
+}
+
 .vacation-locations {
     background-color: white;
-    padding-right: -90px;
+    padding: 1rem;
+}
+
+.vacation-locations h3 {
+    padding-top: 1rem;
+    width: 96%;
 }
 
 footer {
@@ -203,6 +238,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+    min-height: 15vh;
 }
 
 footer p {
@@ -222,15 +258,65 @@ footer p {
 /* Medium View */
 
 @media (min-width: 834px) {
+    .hamburger {
+        display: none;
+    }
+
+    nav.collapsed,
+    nav.expanded {
+        color: black;
+        top: 4.73rem;
+        opacity: 1;
+        visibility: visible;
+        z-index: 10;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .banner-text {
+        visibility: visible;
+        padding-top: 1rem;
+    }
+
     footer p {
         visibility: visible;
+    }
+    nav a :hover {
+        color: var(--main);
     }
 }
 
 /* Large View */
 
 @media (min-width: 1440px) {
+    .hamburger {
+        display: none;
+    }
+
+    nav.collapsed,
+    nav.expanded {
+        background-color: white;
+        color: black;
+        box-shadow: none;
+        max-height: unset;
+        position: static;
+        visibility: visible;
+        width: unset;
+    }
+
+    .banner-text {
+        visibility: visible;
+        padding-top: 1rem;
+    }
+
     footer p {
         visibility: visible;
+    }
+
+    nav a :hover {
+        color: var(--main);
     }
 }

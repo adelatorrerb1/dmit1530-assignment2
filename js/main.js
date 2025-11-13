@@ -6,3 +6,12 @@ toggleButtons.forEach((toggleButtons) => {
         this.nextElementSibling.classList.toggle("expanded");
     });
 });
+
+const toggleButtonUp = document.querySelectorAll(".backtotopbtn");
+
+toggleButtonUp.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
